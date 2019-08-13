@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- libs -->
+	<script src="../js/lib/d3-4.0.js"></script>
+	<script src="../js/lib/jquery-1.12.4.js"></script>
+	<script src="../js/lib/jquery-ui-1.12.1.js"></script>
+	<script src="../js/lib/jquery.mcustomscrollbar.js"></script>
+
+	<script src="../js/icon-generator.js"></script>
+
+	<!-- Put a black border around the d3js drawing area -->
+	<style>
+		#svg-generator {
+			width: 200px;
+			height: 200px;
+		}
+
+		html,
+		body {
+			margin: 0px;
+			font-family: Segoe UI;
+			background-color: rgb(80, 80, 80);
+			color: rgb(220, 220, 220);
+			height: 100%;
+			width: 100%;
+			min-width: 1000px;
+			min-height: 750px;
+			-webkit-box-sizing: border-box;
+			/* Safari/Chrome, other WebKit */
+			-moz-box-sizing: border-box;
+			/* Firefox, other Gecko */
+			box-sizing: border-box;
+		}
+	</style>
+
+
+</head>
+
+
+<body>
+
+	<select id="unit-side">
+		<option value="friendly" selected="selected">Friendly Unit</option>
+		<option value="hostile">Hostile Unit</option>
+		<option value="neutral">Neutral Unit</option>
+	</select>
+
+	<select id="unit-type">
+			<option value="infantry" selected="selected">Infantry</option>
+			<option value="cavalry">Cavalry</option>
+			<option value="artillery">Artillery</option>
+			<option value="armor">Armor</option>
+			<option value="combined">Combined</option>
+			<option value="missile">Missile</option>
+			<option value="special">Special Forces</option>
+	</select>
+
+	<select id="unit-mobility">
+			<option value="dismounted" selected="selected">Dismounted</option>
+			<option value="wheeled">Wheeled</option>
+			<option value="tracked">Tracked</option>
+	</select>
+
+	<select id="unit-size">
+			<option value="squad" selected="selected">Squad</option>
+			<option value="patrol">Patrol</option>
+			<option value="platoon">Platoon</option>
+			<option value="company">Company</option>
+			<option value="battalion">Battalion</option>
+			<option value="regiment">Regiment</option>
+			<option value="brigade">Brigade</option>
+			<option value="division">Division</option>
+			<option value="corps">Corps</option>
+	</select>
+
+	<select id="opacity">
+			<option value="full" selected="selected">Full</option>
+			<option value="transparent">Transparent</option>
+	</select>
+
+	<div id="generator">
+		<svg id="svg-generator"></svg>
+	</div>
+
+	<button id="export">Save Image</button>
+	<button id="export-all">Download All</button>
+
+	<div id="svgdataurl"></div>
+
+	<canvas>
+
+	</canvas>
+	<div id="pngdataurl"></div>
+</body>

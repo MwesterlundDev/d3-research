@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MW</title>
+
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+	<!-- libs -->
+	<script src="js/lib/d3-4.0.js"></script>
+	<script src="js/lib/jquery-1.12.4.js"></script>
+	<script src="js/lib/jquery-ui-1.12.1.js"></script>
+	<script src="js/lib/bootstrap-2.3.0.js"></script>
+	<script src="js/lib/jquery.mousewheel-3.0.6.js"></script>
+	<script src="js/lib/jquery.mcustomscrollbar.js"></script>
+	<!--script src="js/lib/jquery.jscrollpane.js"></script-->
+
+	<!-- acove code -->
+	<link rel="stylesheet" href="css/rcs.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/lib/rcs.js"></script>
+	<script src="js/side-circle.js"></script>
+	<script src="js/circle-bar-chart.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<label>Side Circle</label>
+		<svg id="side-circle-svg" class="testCSS"></svg>
+	</div>
+	<div class="container">
+		<label>Circle Bar Chart</label>
+		<svg id="circle-bar-svg" class="testCSS"></svg>
+	</div>
+	<script>
+		console.log("call main");
+		var sideCircle = new SideCircle();
+		sideCircle.initialize();
+
+		var circleBarChart = new CircleBarChart();
+		circleBarChart.initialize();
+		
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transition tester</title>
+
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+	<!-- libs -->
+	<script src="js/lib/d3-4.0.js"></script>
+	<script src="js/lib/jquery-1.12.4.js"></script>
+	<script src="js/lib/jquery-ui-1.12.1.js"></script>
+	<script src="js/lib/bootstrap-2.3.0.js"></script>
+	<script src="js/lib/jquery.mousewheel-3.0.6.js"></script>
+	<script src="js/lib/jquery.mcustomscrollbar.js"></script>
+	<!--script src="js/lib/jquery.jscrollpane.js"></script-->
+
+	<!-- acove code -->
+	<link rel="stylesheet" href="css/rcs.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/lib/rcs.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="main-test">
+		<label>Test SVG</label>
+		<svg id="test-svg">
+			<defs>
+				<linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
+            
+					<stop offset="0%" stop-color="#7A5FFF">
+						<animate attributeName="stop-color" values="#7A5FFF; #01FF89; #7A5FFF" dur="4s" repeatCount="indefinite"></animate>
+					</stop>
+		
+					<stop offset="100%" stop-color="#01FF89">
+						<animate attributeName="stop-color" values="#01FF89; #7A5FFF; #01FF89" dur="4s" repeatCount="indefinite"></animate>
+					</stop>
+		
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
+
+	<script>
+		console.log("call main");
+		var main = new Main();
+		main.initialize();
+	</script>
+
+</body>
+
+</html>

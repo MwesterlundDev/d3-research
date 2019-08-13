@@ -1,0 +1,39 @@
+html, body {
+	margin: 0px;
+	font-family : Arial;
+	background-color: rgb(50, 50, 50);
+	color: rgb(220, 220, 220);
+	height: 100%;
+	width: 100%;
+	min-width: 1000px;
+	min-height: 750px;
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+#main-test {
+	height: 100%;
+	width: 100%;
+}
+
+#main-test label {
+	width: 100%;
+	height: 30px;
+	float: left;
+	clear: both;
+}
+
+#tooltip {
+	background: rgb(255, 255, 255);
+	color: black;
+	font-size: 10px;
+	height: 25px;
+}
+
+#test-svg {
+	float: left;
+	clear: both;
+}
